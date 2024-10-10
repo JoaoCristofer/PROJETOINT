@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #413275;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0b021a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'header.css';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#primeirafala{
+    font-size: 20px;
+    font-weight: bold}
+
+.btn-comecar {
+   margin-left: 32.5vw;
+    padding: 15px 30px;
+    background-color: #5f47ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-comecar:hover {
+    background-color: #743cf7;
+    transform: scale(1.05);
+}
+
+.btn-comecar:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-comecar {
+    animation: fadeInButton 1.5s ease-out;
+}
+
+.secao-sobre,
+.secao-motivacao,
+.secao-dicas,
+
+.secao-artigos {
+    opacity: 0;
+    animation: fadeInSection 2s ease forwards;
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.secao-sobre,
+.secao-motivacao,
+
+.secao-artigos,
+.dicas-container {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #484848;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.conteudo-container,
+.dicas-container,
+
+.artigos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dica,
+.depoimento,
+.artigo {
+    flex: 1 1 29%;
+    padding: 20px;
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento {
+    font-style: italic;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #272248;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.rodape a {
+    color: #fff;
+}
+
+
+
+
+
+
+

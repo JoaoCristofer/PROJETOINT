@@ -1,0 +1,198 @@
+$azul-fundo: #003366;
+$background-branco: #d6e2f2;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-branco;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $azul-fundo;
+    padding: 10px 0;
+    text-align: center;
+}
+
+   
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: $azul-fundo;
+}
+
+h2 {
+    font-size: 30px;
+    color: $azul-fundo;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+.imagem {
+    height: 250px;
+    width: 450px; 
+    border-radius: 10px;
+    display: flex; 
+    margin: auto;
+}
+
+.texto {
+    text-align: left; 
+    margin-top: 20px; 
+}
+
+footer {
+    background-color: $azul-fundo;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#sobrenos  {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;   
+}
+
+#alcool {
+    
+   padding: 50px 20px;
+   background-color: white;
+   text-align: center;   
+    
+}
+
+#cigarro{
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center; 
+}
+
+#apostas{
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center; 
+}
+
+#drogas{
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center; 
+}
+
+#redessociais{
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center; 
+}
+
+
+
+
+
+#membrosequipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $background-branco;
+    border-radius: 10px;
+}
+
+#membrosequipe img {
+    width: 250px; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+.imagem-alcool {
+    height: 250px;
+    width: 450px; 
+    border-radius: 10px;
+    display: flex; 
+    margin: auto; 
+}
+
+
+.imagem-cigarro {
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+
+
+.imagem-apostas {
+    height: 250px;
+    width: 450px; 
+    border-radius: 10px;
+    display: flex; 
+    margin: auto;
+}
+
+
+.imagem-drogas {
+    height: 250px;
+    width: 450px; 
+    border-radius: 10px;
+    display: flex; 
+    margin: auto;
+}
+
+
+.info-esquerda{
+    text-align: left;
+    color: $azul-fundo;
+}
+
+.info-direita {
+    text-align: left;
+    color: $azul-fundo;
+}
+
+
+.info-esquerda h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.info-direita h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.info-esquerda p {
+    font-size: 18px;
+}
+
+
+.info-direita p {
+    font-size: 18px;
+}
