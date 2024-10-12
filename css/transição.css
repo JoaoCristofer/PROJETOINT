@@ -1,0 +1,56 @@
+body {
+    background-color: #413275;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#a {
+    max-width: 600px;
+    margin: 50px auto;
+    display: grid;
+    background-color: #0b021a;
+    border-radius: 20px;
+    height: 700px;
+    grid-template-rows: repeat(7, 1fr);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.b {
+    background: linear-gradient(45deg, #484848, #6e6d6d);
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid #ffffff88; 
+   
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 212, 255, 0.4); 
+}
+
+.b:hover {
+    background: linear-gradient(45deg, #484848, #484848);
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 212, 255, 0.7);
+}
+
+.b:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 212, 255, 0.5); 
+}
+
+#sobrenos {
+    border-radius: 0 0 20px 20px;
+}
+.c{
+background-color: #0b021a;
+display: flex;
+
+}

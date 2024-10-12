@@ -18,8 +18,7 @@
 
 #estrela {
     position: absolute;
-    top: 0;
-    left: 0;
+  left: 0;
     width: 121%;
     height: 410px;
     animation: moveEstrela 35s alternate infinite linear;
@@ -101,6 +100,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    animation: destacar2 2s ease-out;
+
 }
 
 .otroslogan {
@@ -113,12 +114,11 @@
 
 @keyframes destacar {
     0% {
-        opacity: 0;
-        transform: scale(0.8);
+     transform: translateX(600px);
     }
     100% {
-        opacity: 1;
-        transform: scale(1.2);
+        transform: translateX(0px);
+
     }
 
 
@@ -128,7 +128,14 @@
 }
 
 
-    
+@keyframes destacar2 {
+    0% {
+     transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0px);
+
+    }}
     
     
     
@@ -185,6 +192,10 @@ color: #000000;
 
 }
 
+
+
+
+
 /* CHECKBOX NAO FUNCIONA COM CODIGO Q N TA NESSE PASTA TEMQ FAZE O RESTO NO ESTILO DAS DEMAIS*/
 
 
@@ -212,4 +223,8 @@ color: #000000;
     top: 2px;
     left: 2px;
     transition: transform 0.4s;
+}
+#darkmode-toggle{
+
+    opacity: 0;
 }
