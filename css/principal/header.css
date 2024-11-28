@@ -174,25 +174,7 @@
 
 
 
-#darkmode-toggle {
-    opacity: 0;
-}
 
-#darkmode-toggle:checked + .toggle-label {
-    background-color: #333;
-}
-
-#darkmode-toggle:checked + .toggle-label .toggle-button {
-    transform: translateX(30px);
-}
-
-#darkmode-toggle:checked ~ #nav {
-    background-color: #ffffff;
-}
-
-#darkmode-toggle:checked ~ #nav ul li a {
-    color: #000000;
-}
 
 #theme-toggle {
     opacity: 0;
