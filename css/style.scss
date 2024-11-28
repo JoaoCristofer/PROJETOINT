@@ -14,9 +14,6 @@ header {
     text-align: center;
 }
 
-   
-
-
 nav ul li {
     display: inline;
     margin: 0 15px;
@@ -51,8 +48,6 @@ p {
     margin-bottom: 15px;
 }
 
-
-
 .imagem {
     height: 250px;
     width: 450px; 
@@ -72,7 +67,6 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
 
 #sobrenos  {
     padding: 50px 20px;
@@ -112,10 +106,6 @@ footer {
     text-align: center; 
 }
 
-
-
-
-
 #membrosequipe {
     display: flex;
     justify-content: space-between;
@@ -139,7 +129,6 @@ footer {
     margin: auto; 
 }
 
-
 .imagem-cigarro {
     height: 250px;
     width: 450px;
@@ -147,7 +136,6 @@ footer {
     display: flex;
     margin: auto;
 }
-
 
 .imagem-apostas {
     height: 250px;
@@ -194,5 +182,45 @@ footer {
 
 
 .info-direita p {
-    font-size: 18px;
+    font-size: 18px;
 }
+
+/* referencias */
+
+#referencias {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    
+    
+    h1 {
+        color: #2c3e50;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #7f8c8d;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        
+        li {
+            background-color: #ecf0f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;}
+
+            a {
+                color: #2c3e50;
+
+                &:hover {
+                    text-decoration: underline;
+              }
+            } 
+        }     
+    }

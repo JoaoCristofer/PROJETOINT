@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vício em Álcool</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        #translateBtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #translateBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <button id="translateBtn">Traduzir para Inglês</button>
+        
+        <!-- Espaço para o Google Translate -->
+        <div id="google_translate_element"></div>
         <nav>
             <ul>
-                <li><a href="/index.html">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
                 <li><a href="alcool.html">Vício em Álcool</a></li>
-                <li><a href="cigarro.html">Malefícios do Cigarro</a></li>
+                <li><a href="cigarro.html">Vício em Cigarro</a></li>
                 <li><a href="apostas.html">Vício em Apostas</a></li>
                 <li><a href="drogas.html">Vício em Drogas</a></li>
                 <li><a href="redes-sociais.html">Vício em Redes Sociais</a></li>
+                <li><a href="referencias.html"> Referências</a></li>
                 
             </ul>
         </nav>
@@ -59,6 +80,15 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt', // Define o idioma da página como português
+                includedLanguages: 'en', // Inclui o inglês como idioma de destino
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
 
     <footer>
         <p> 2024 - Todos os direitos reservados.</p>

@@ -19,6 +19,9 @@ body {
 #primeirafala {
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-comecar {
