@@ -1,33 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malefícios do Cigarro</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <style>
-        #translateBtn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        #translateBtn:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <button id="translateBtn">Traduzir para Inglês</button>
-        
-        <!-- Espaço para o Google Translate -->
-        <div id="google_translate_element"></div>
+    <header> 
         <nav>
             <ul>
                 <li><a href="/index.html">Início</a></li>
@@ -40,55 +20,143 @@
                 <li><a href="referencias.html"> Referências</a></li>
             </ul>
         </nav>
+        <label for="language-toggle">Inglês</label>
+        <input type="checkbox" id="language-toggle">
     </header>
 
     <section id="cigarro">
         <div class="container">
-            <h1>Malefícios do Cigarro</h1>
-            <p>O vício em cigarro é um dos maiores problemas de saúde no mundo. O consumo diário de cigarros afeta de diversas formas a saúde, causando uma série de doenças e complicações.</p>
-            
+            <h1 class="titulo" id="titulo">Malefícios do Cigarro</h1>
+            <p id="primeirafala">O vício em cigarro é um dos maiores problemas de saúde no mundo...</p>
             <div class="content">
-                <img src="imagens/downloadcigarro.jpeg" alt="Imagem de cigarro" class="imagem-cigarro">
+                <img src="imagens/cigarro real.jpeg" alt="Imagem de cigarro" class="imagem-cigarro">
                 <div class="texto">
-                    <h2>Malefícios do Cigarro</h2>
-                    <p>Os principais malefícios do cigarro incluem:</p>
-                    <p>- Doenças pulmonares, como tuberculose e bronquite;</p>
-                    <p>- Câncer de pulmão e outras formas de câncer;</p>
-                    <p>- Problemas cardíacos, como ataques cardíacos e pressão alta;</p>
-                    <p>- Envelhecimento precoce da pele;</p>
-                    <p>- Problemas respiratórios graves;</p>
-                    <p>- Dependência enorme à nicotina.</p>
+                    <h2 id="efeitos">Malefícios do Cigarro</h2>
+                    <p id="doencas">Os principais malefícios do cigarro incluem:</p>
+                    <ul id="lista-doencas">
+                        <li>Doenças pulmonares, como tuberculose e bronquite;</li>
+                        <li>Câncer de pulmão e outras formas de câncer;</li>
+                        <li>Problemas cardíacos, como ataques cardíacos e pressão alta;</li>
+                        <li>Envelhecimento precoce da pele;</li>
+                        <li>Problemas respiratórios graves;</li>
+                        <li>Dependência enorme à nicotina.</li>
+                    </ul>
 
-                    <h2>Efeitos no Cérebro</h2>
-                    <p>O cigarro afeta o cérebro ao causar:</p>
-                    <p>- Dependência química pela nicotina;</p>
-                    <p>- Alterações de humor e ansiedade;</p>
-                    <p>- Redução da memória e raciocínio lógico;</p>
-                    <p>- Aumento do estresse em situações de abstinência.</p>
+                    <h2 id="efeitos-cerebro">Efeitos no Cérebro</h2>
+                    <ul id="efeitos-lista">
+                        <li>Dependência química pela nicotina;</li>
+                        <li>Alterações de humor e ansiedade;</li>
+                        <li>Redução da memória e raciocínio lógico;</li>
+                        <li>Aumento do estresse em situações de abstinência.</li>
+                    </ul>
 
-                    <h2>Como Parar de Fumar</h2>
-                    <p>Parar de fumar pode ser desafiador, mas é possível com os seguintes passos:</p>
-                    <p>- Reconhecer o problema e querer mudar;</p>
-                    <p>- Procurar ajuda médica, com terapias e medicamentos;</p>
-                    <p>- Praticar exercícios físicos e manter hábitos saudáveis;</p>
-                    <p>- Participar de grupos de apoio, e conversar com pessoas sobre seu vicio;</p>
-                    <p>- Evitar situações que possam desencadear o desejo de fumar, como por exemplo não fumar depois do trabalho entre outras.</p>
+                    <h2 id="como-parar">Como Parar de Fumar</h2>
+                    <ul id="como-parar-lista">
+                        <li>Reconhecer o problema e querer mudar;</li>
+                        <li>Procurar ajuda médica, com terapias e medicamentos;</li>
+                        <li>Praticar exercícios físicos e manter hábitos saudáveis;</li>
+                        <li>Participar de grupos de apoio, e conversar com pessoas sobre seu vício;</li>
+                        <li>Evitar situações que possam desencadear o desejo de fumar.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'pt', // Define o idioma da página como português
-                includedLanguages: 'en', // Inclui o inglês como idioma de destino
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
 
     <footer>
-        <p> 2024 - Todos os direitos reservados.</p>
+        <p class="rodape" id="rodape">2024 - Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const languageToggle = document.getElementById("language-toggle");
+
+        languageToggle.addEventListener("change", function () {
+            const isEnglish = this.checked;
+
+            // Traduções
+            const translations = {
+                en: {
+                    titulo: "Harmful Effects of Smoking",
+                    primeirafala: "Smoking addiction is one of the biggest health problems worldwide...",
+                    efeitos: "Harmful Effects of Smoking",
+                    doencas: "The main harmful effects of smoking include:",
+                    listaDoencas: [
+                        "Lung diseases, such as tuberculosis and bronchitis;",
+                        "Lung cancer and other forms of cancer;",
+                        "Heart problems, such as heart attacks and high blood pressure;",
+                        "Premature skin aging;",
+                        "Serious respiratory problems;",
+                        "Severe nicotine dependence."
+                    ],
+                    efeitosCerebro: "Effects on the Brain",
+                    listaEfeitos: [
+                        "Nicotine addiction;",
+                        "Mood swings and anxiety;",
+                        "Memory and reasoning reduction;",
+                        "Increased stress during withdrawal."
+                    ],
+                    comoParar: "How to Quit Smoking",
+                    listaComoParar: [
+                        "Recognize the problem and want to change;",
+                        "Seek medical help with therapy and medications;",
+                        "Exercise and maintain healthy habits;",
+                        "Join support groups and talk to others about your addiction;",
+                        "Avoid situations that may trigger the urge to smoke."
+                    ],
+                    rodape: "© 2024 All rights reserved."
+                },
+                pt: {
+                    titulo: "Malefícios do Cigarro",
+                    primeirafala: "O vício em cigarro é um dos maiores problemas de saúde no mundo...",
+                    efeitos: "Malefícios do Cigarro",
+                    doencas: "Os principais malefícios do cigarro incluem:",
+                    listaDoencas: [
+                        "Doenças pulmonares, como tuberculose e bronquite;",
+                        "Câncer de pulmão e outras formas de câncer;",
+                        "Problemas cardíacos, como ataques cardíacos e pressão alta;",
+                        "Envelhecimento precoce da pele;",
+                        "Problemas respiratórios graves;",
+                        "Dependência enorme à nicotina."
+                    ],
+                    efeitosCerebro: "Efeitos no Cérebro",
+                    listaEfeitos: [
+                        "Dependência química pela nicotina;",
+                        "Alterações de humor e ansiedade;",
+                        "Redução da memória e raciocínio lógico;",
+                        "Aumento do estresse em situações de abstinência."
+                    ],
+                    comoParar: "Como Parar de Fumar",
+                    listaComoParar: [
+                        "Reconhecer o problema e querer mudar;",
+                        "Procurar ajuda médica, com terapias e medicamentos;",
+                        "Praticar exercícios físicos e manter hábitos saudáveis;",
+                        "Participar de grupos de apoio, e conversar com pessoas sobre seu vício;",
+                        "Evitar situações que possam desencadear o desejo de fumar."
+                    ],
+                    rodape: "2024 - Todos os direitos reservados."
+                }
+            };
+
+            const lang = isEnglish ? "en" : "pt";
+
+            // Atualizando o conteúdo da página com base no idioma
+            document.getElementById("titulo").textContent = translations[lang].titulo;
+            document.getElementById("primeirafala").textContent = translations[lang].primeirafala;
+            document.getElementById("efeitos").textContent = translations[lang].efeitos;
+            document.getElementById("doencas").textContent = translations[lang].doencas;
+            const listaDoencas = document.getElementById("lista-doencas");
+            listaDoencas.innerHTML = translations[lang].listaDoencas.map(item => `<li>${item}</li>`).join('');
+            
+            document.getElementById("efeitos-cerebro").textContent = translations[lang].efeitosCerebro;
+            const listaEfeitos = document.getElementById("efeitos-lista");
+            listaEfeitos.innerHTML = translations[lang].listaEfeitos.map(item => `<li>${item}</li>`).join('');
+
+            document.getElementById("como-parar").textContent = translations[lang].comoParar;
+            const listaComoParar = document.getElementById("como-parar-lista");
+            listaComoParar.innerHTML = translations[lang].listaComoParar.map(item => `<li>${item}</li>`).join('');
+
+            document.getElementById("rodape").textContent = translations[lang].rodape;
+        });
+    </script>
 </body>
 </html>

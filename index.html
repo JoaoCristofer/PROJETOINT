@@ -6,39 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobery - Supere Seus Vícios</title>
     <link rel="stylesheet" href="css/principal/estilo.css">
-
-
 </head>
 
 <body>
     <div id="conteiner">
-        <header class="cabecalho"> <img id="estrela" src="conteudo/imagens/d58f7be3-2fdd-4af3-9dda-a9f5dfab53ad.jpg" alt="">
-            
 
+        <header class="cabecalho">
+            <img id="estrela" src="conteudo/imagens/estrela.jpg" alt="Estrela">
 
+            <!-- Botão de alternar tema -->
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="theme-label">
+                <span class="theme-button">
+                    <span class="brazil-flag"></span>
+                </span>
+            </label>
 
-<input type="checkbox" id="theme-toggle">
-<label for="theme-toggle" class="theme-label">
-    <span class="theme-button">
-        <span class="brazil-flag"></span>
-        <span class="usa-flag"></span>
-    </span>
-</label>
-
-            
-            
-           
-
+            <!-- Botão de alternar idioma -->
+            <input type="checkbox" id="language-toggle">
+            <label for="language-toggle" class="language-label">
+                <span class="language-button">
+                    <span class="usa-flag"></span>
+                </span>
+            </label>
 
             <img src="conteudo/imagens/logo.png" alt="Logo Sobery" class="logo">
             <h1 class="titulo">Sobery</h1>
-            <p class="slogan"> Mude seus hábitos <span class="otroslogan">mude de vida!</span></p>
+            <p class="slogan">Mude seus hábitos <span class="otroslogan">mude de vida!</span></p>
             <nav id="nav">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#motivacao">Motivação</a></li>
-                    <li><a href="#conteúdos">Dicas</a></li>
-
+                    <li><a id="abc1" href="#sobre">Sobre</a></li>
+                    <li><a id="abc2" href="#motivacao">Motivação</a></li>
+                    <li><a id="abc3" href="#conteúdos">Dicas</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,21 +46,21 @@
             <section id="sobre" class="secao-sobre">
                 <h2></h2>
                 <div class="conteudo-container">
-                    <p id="primeirafala">Comece hoje na Sobery para mudar seus hábitos e transformar sua vida. Superar
-                        vícios é possível com o apoio certo e a força de vontade. Dê o primeiro passo agora e descubra
-                        como uma vida mais saudável está ao seu alcance</p> <a href="/conteudo/transição.html">
-                            <button class="btn-comecar">Começar</button>
-                        </a>
-                        
+                    <p id="primeirafala">Comece hoje na Sobery para mudar seus hábitos e transformar sua vida. Superar vícios é possível com o apoio certo e a força de vontade. Dê o primeiro passo agora e descubra como uma vida mais saudável está ao seu alcance</p>
+                    <a href="/conteudo/transição.html">
+                        <button class="btn-comecar">Começar</button>
+                    </a>
+                </div>
             </section>
 
             <section id="motivacao" class="secao-motivacao">
                 <h2>Encontre Motivação</h2>
                 <div class="conteudo-container">
-                    <p>Mudar é difícil, mas encontrar a motivação certa pode fazer toda a diferença. Aqui, você
-                        encontrará inspiração e dicas práticas para começar sua jornada.</p>
+                    <p>Mudar é difícil, mas encontrar a motivação certa pode fazer toda a diferença. Aqui, você encontrará inspiração e dicas práticas para começar sua jornada.</p>
                 </div>
-            </section>  <h2> Oque Ensinamos</h2>
+            </section>
+
+            <h2>O que Ensinamos</h2>
             <div class="dicas-container">
                 <article class="dica">
                     <h3>Identifique os Gatilhos</h3>
@@ -73,36 +72,78 @@
                 </article>
                 <article class="dica">
                     <h3>Criar uma Rede de Apoio</h3>
-                    <p>Rodeie-se de pessoas que apoiam sua decisão de mudar e que possam ajudar em momentos
-                        difíceis.</p>
-                </article>
-
-                <article class="artigo">
-                    <h3>Como Lidar com a Abstinência</h3>
-                    <p>Descubra técnicas para lidar com a abstinência e continuar firme na sua jornada de
-                        recuperação.</p>
-                </article>
-                <article class="artigo">
-                    <h3>A Importância de Buscar Ajuda Profissional</h3>
-                    <p>Profissionais podem ajudar a superar vícios mais complexos com abordagens especializadas.</p>
-                </article>
-                <article class="artigo">
-                    <h3>10 Hábitos Saudáveis Para Substituir o Vício</h3>
-                    <p>Aprenda 10 hábitos que podem ajudá-lo a substituir comportamentos negativos por positivos.
-                    </p>
+                    <p>Rodeie-se de pessoas que apoiam sua decisão de mudar e que possam ajudar em momentos difíceis.</p>
                 </article>
             </div>
-            <section id="dicas" class="secao-dicas">
-              
-               
-            </section>
         </main>
 
         <footer class="rodape">
             <p>&copy; 2024 Sobery. Todos os direitos reservados.</p>
-            <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
         </footer>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
-</html>
+
+
+    <script>
+        const checkbox = document.getElementById("theme-toggle");
+        const image = document.getElementById("estrela");
+
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+                image.src = "/conteudo/imagens/sol.jpg";
+                image.style.width = "1200px";
+                image.style.height = "65w0px";
+                image.style.animation = "none";
+            } else {
+                image.src = "/conteudo/imagens/estrela.jpg";
+                image.style.width = "";
+                image.style.height = "";
+                image.style.animation = "moveEstrela 35s alternate infinite linear;";
+            }
+
+            
+        });
+
+        const languageToggle = document.getElementById("language-toggle");
+
+languageToggle.addEventListener("change", function () {
+    const isEnglish = this.checked;
+
+    // Traduções
+    const translations = {
+        en: {
+            slogan: "Change your habits, change your life!",
+            nav: ["About", "Motivation", "Tips"],
+            sections: {
+                sobre: "Start today at Sobery to change your habits and transform your life...",
+                motivacao: "Changing is difficult, but finding the right motivation can make all the difference."
+            },
+            footer: "© 2024 Sobery. All rights reserved."
+        },
+        pt: {
+            slogan: "Mude seus hábitos, mude de vida!",
+            nav: ["Sobre", "Motivação", "Dicas"],
+            sections: {
+                sobre: "Comece hoje na Sobery para mudar seus hábitos...",
+                motivacao: "Mudar é difícil, mas encontrar a motivação certa pode fazer toda a diferença."
+            },
+            footer: "© 2024 Sobery. Todos os direitos reservados."
+        }
+    };
+
+    const lang = isEnglish ? "en" : "pt";
+
+    document.querySelector(".slogan").textContent = translations[lang].slogan;
+    const navItems = document.querySelectorAll("#nav ul li a");
+    navItems.forEach((item, i) => {
+        item.textContent = translations[lang].nav[i];
+    });
+    document.getElementById("primeirafala").textContent = translations[lang].sections.sobre;
+    document.querySelector(".secao-motivacao .conteudo-container p").textContent = translations[lang].sections.motivacao;
+    document.querySelector(".rodape p").textContent = translations[lang].footer;
+});
+
+      </script>
