@@ -24,10 +24,27 @@ body {
 
 
 
-@import 'themeswitch.css';
-
-
-
+body:has(#theme-toggle:checked) p  {
+    color: black;
+  }
+  body:has(#theme-toggle:checked) h2  {
+    color: black;
+  }
+  body:has(#theme-toggle:checked) h1  {
+    color: black;
+  }
+  body:has(#theme-toggle:checked)  .otroslogan {
+    color: black;
+  }
+  body:has(#theme-toggle:checked) h3 {
+    color: black;
+  }body:has(#theme-toggle:checked) a  {
+    color: rgb(0, 0, 0)
+  }body:has(#theme-toggle:checked) #sobre  {
+    color: black;
+  }body:has(#theme-toggle:checked) p  {
+    color: black;
+  }
 
 
 

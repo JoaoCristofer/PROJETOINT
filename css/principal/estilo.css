@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import 'themeswitch.css';
 @import 'header.css';
 body {
   font-family: "Roboto", sans-serif;
@@ -15,6 +14,38 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #0b021a;
+}
+
+body:has(#theme-toggle:checked) p {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) h2 {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) h1 {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) .otroslogan {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) h3 {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) a {
+  color: rgb(0, 0, 0);
+}
+
+body:has(#theme-toggle:checked) #sobre {
+  color: black;
+}
+
+body:has(#theme-toggle:checked) p {
+  color: black;
 }
 
 #primeirafala {
